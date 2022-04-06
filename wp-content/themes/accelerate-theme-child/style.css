@@ -1,0 +1,233 @@
+/*
+Theme Name:   Accelerate Theme Child
+Theme URI:    http://example.com/accelerate-theme-child/
+Description:  Accelerate Child Theme - Accelerate
+Author:   	Your Name!
+Author URI:   http://example.com
+Template: 	accelerate-theme
+Version:      2.0.0
+Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  accelerate-theme-child
+*/
+
+
+.home-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+
+
+#masthead {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+
+
+.button {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+
+
+
+
+/* ==========================================================================
+   Homepage - Mobile Styles
+   ========================================================================== */
+
+
+/************************  HOMEPAGE - MOBILE - FRONT-PAGE TEMPLATE - FEATURED WORK AREA *****************/
+
+#menu-social-media-nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+
+.featured-work{
+
+padding-bottom: 50px;
+}
+
+
+.featured-work .site-content .content-wrapper h2{
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+}
+
+.homepage-featured-work{
+   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.individual-featured-work{
+
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.individual-featured-work figure{
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+
+.individual-featured-work h3{
+    font-family: open;
+    font: 100 1em/1.75 'Open Sans', 'Montserrat',  Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+
+/************************  ARCHIVE-CASE-STUDIES-TEMPLATE/PAGE - MOBILE -  *****************/
+
+
+
+/************************  BLOG-PAGE - MOBILE *****************/
+.blog-post {
+    width: 50%;
+    float: left;
+    margin-bottom: 2em;
+}
+
+.blog-post h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 2em 0 .5em;
+}
+
+.blog-post h3 {
+    font-size: 1.5em;
+}
+
+
+.read-more-link {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #45ac9d;
+    text-transform: uppercase;
+}
+
+div .case-study-sidebar{
+    float:  left;
+    width: 300px;
+    margin-top: 50px;
+}
+
+
+.case-study-sidebar h2{
+    font-weight: 500;
+    padding:  0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.case-study-sidebar h5{
+    font-weight: 100;
+    text-transform: capitalize;
+    color:  #A9A9A9;
+    font-size: 12px;
+    padding:  0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.case-study-sidebar h6{
+    font-weight: 100;
+     font-size: 12px;
+    padding:  5px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.case-study-sidebar p{
+    font-weight: 100;
+    padding:  20px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 16px;
+}
+
+.read-more-link a{
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #45ac9d;
+    font-size: 14px;
+}
+
+
+div.case-study-images {
+    float:  left;
+    width: 600px;
+    padding-left:  80px;
+   
+}
+
+.case-study-images img{
+    width:  100%;
+    padding-bottom: 50px;
+}
+
+
+#navigation{
+    float:  clear;
+}
+
+
+
+
+
+/*============================================================================
+                            TABLET MEDIA QUERY
+============================================================================*/
+
+
+@media only screen and (min-width: 768px){
+
+
+    .individual-featured-work{
+
+        width: 30%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+
+
+
+    /************************  CASE-STUDIES-ARCHIVE-PAGE - TABLET *****************/
+
+
+
+
+
+
+
+}
+
+
+
+/*==========================================================================
+                      DESKTOP MEDIA QUERY
+===========================================================================*/
+
+
+@media only screen and (min-width: 1200px){
+
+    
+
+
+}
