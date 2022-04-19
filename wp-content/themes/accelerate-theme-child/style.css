@@ -11,7 +11,7 @@ Text Domain:  accelerate-theme-child
 */
 
 
-.home-page {
+.home-page, .about-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
 
@@ -34,45 +34,38 @@ Text Domain:  accelerate-theme-child
 
 
 /************************  HOMEPAGE - MOBILE - FRONT-PAGE TEMPLATE - FEATURED WORK AREA *****************/
-
-#menu-social-media-nav{
-    list-style-type: none;
+div #primary{
     display: flex;
-    justify-content: space-around;
-    width: 30%;
-
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.featured-work{
 
-padding-bottom: 50px;
+.featured-work{
+    padding-bottom: 50px;
 }
 
 
 .featured-work .site-content .content-wrapper h2{
     text-align: center;
-    text-transform: uppercase;
-    
-    
+    text-transform: uppercase;    
 }
 
 .homepage-featured-work{
-   
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .individual-featured-work{
-
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 
@@ -88,7 +81,47 @@ padding-bottom: 50px;
     width: 100%;
     text-align: center;
     margin-top: 15px;
+}
 
+
+#menu-social-media-nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+
+div #front-page-lower-half{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#front-page-blog-post{
+    width: 100%;
+}
+
+
+div #front-page-lower-half h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 2em 0 .5em;
+}
+
+.read-more-link, .follow-us-link {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #45ac9d;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.follow-us-link {
+    padding: 10px 0 0 0;
 }
 
 
@@ -96,7 +129,8 @@ padding-bottom: 50px;
 
 
 
-/************************  BLOG-PAGE - MOBILE *****************/
+/************************************  BLOG-PAGE - MOBILE ********************************/
+
 .blog-post {
     width: 50%;
     float: left;
@@ -115,12 +149,8 @@ padding-bottom: 50px;
 }
 
 
-.read-more-link {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    color: #45ac9d;
-    text-transform: uppercase;
-}
+
+/************************  SINGLE-CASE-STUDIES-TEMPLATE/PAGE - MOBILE -  *****************/
 
 div .case-study-sidebar{
     float:  left;
@@ -170,8 +200,7 @@ div .case-study-sidebar{
 div.case-study-images {
     float:  left;
     width: 600px;
-    padding-left:  80px;
-   
+    padding-left:  80px; 
 }
 
 .case-study-images img{
@@ -182,6 +211,200 @@ div.case-study-images {
 
 #navigation{
     float:  clear;
+}
+
+/************************************  CONTACT-PAGE - MOBILE ********************************/
+
+
+#nf-label-field-1, #nf-label-field-2, #nf-label-field-3 {
+    font-weight: 100;
+  }
+
+
+.nf-form-fields-required {
+    display: none;
+  }
+
+  .ninja-forms-req-symbol {
+    display: none;
+  }
+
+
+#nf-field-1-wrap, #nf-field-2-wrap{
+    width: 45%;
+}
+
+#nf-field-2-wrap{
+    float: left;
+}
+
+#nf-field-4{
+    background-color: #45ac9d;
+    padding-left: 100px;
+    padding-right: 100px;
+    float: right;
+    text-transform: capitalize;
+    font-weight: 300px;
+}
+
+
+
+
+/************************  404 Error Page - MOBILE - FRONT-PAGE TEMPLATE - FEATURED WORK AREA *****************/
+
+
+div #error-page-stuff{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.error-page-contents h1{
+    color: #45ac9d;
+    text-align: left;
+    font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+}
+
+
+.error-page-contents p{
+    text-align: left;
+}
+
+.error-page-contents a{
+    color: #45ac9d;
+    font-weight: bold;
+}
+
+.error-page-contents{
+    width: 100%;
+}
+
+
+div #error-page-content-img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 0 0;
+}
+
+div #error-page-text{
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 50px;
+}
+
+
+
+
+/************************  SINGLE SERVICES PAGE - MOBILE - SINGLE-SERVICES TEMPLATE *****************/
+
+
+
+
+
+div .services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+div .service-content {
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+div .service-content h2 {
+    width: 100%; 
+}
+
+div .service-content p {
+    width: 100%; 
+}
+
+
+div .service-icon-b {
+padding-top: 30px;
+}
+
+
+/************************  ARCHIVE SERVICES PAGE - MOBILE - ARCHIVE-SERVICES TEMPLATE  **********************/
+
+
+.about-page-hero-content {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+
+
+
+
+#archive-services-content{
+    background-color: yellow;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+}
+
+
+div .services-intro h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+div .services-intro p{
+    text-align: center;
+}
+
+
+
+div .archive-services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+div .archive-service-content {
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+div .archive-service-content h2 {
+    width: 100%; 
+}
+
+div .archive-service-content p {
+    width: 100%; 
+}
+
+
+div .archive-service-icon-b {
+padding-top: 30px;
 }
 
 
@@ -196,6 +419,8 @@ div.case-study-images {
 @media only screen and (min-width: 768px){
 
 
+       /************************  HOMEPAGE/FRONTPAGE - TEMPLATE - TABLET *****************/
+
     .individual-featured-work{
 
         width: 30%;
@@ -207,13 +432,146 @@ div.case-study-images {
     }
 
 
+    div #front-page-lower-half{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
 
-    /************************  CASE-STUDIES-ARCHIVE-PAGE - TABLET *****************/
+    .recent-posts, .recent-tweets {
+        width: 45%;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    
+    
+
+
+
+    /*****************************  CASE-STUDIES-ARCHIVE-PAGE - TABLET *************************/
 
 
 
 
 
+
+/************************************  SIDEBAR-FOR-BLOG-SINGLE & ARCHIVE - PAGES - TABLET ********************************/
+
+
+#sidebar-newsletter-signup h2{
+    text-align: center;
+    font-size: 23px;
+    line-height: 28px;
+    color: green;
+    text-transform: capitalize;
+    
+}
+
+#sidebar-submit-button{
+    background-color:#45ac9d;
+    padding: 0 28px 0 28px;
+    margin-top: 30px;;
+}
+
+
+/************************  404 ERROR - TEMPLATE/PAGE- TABLET *****************/
+
+
+
+div #error-page-stuff{
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+
+.error-page-contents{
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+
+
+/************************  SINGLE SERVICES PAGE - TABLET - SINGLE-SERVICES TEMPLATE *****************/
+
+
+div .services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+div .service {
+    width: 70%;
+    margin: 0 30px 0 30px;
+}
+
+div .service-content h2 {
+    width: 100%; 
+}
+
+
+div .service-content p {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    background-color: red; 
+}
+
+
+div .service-icon-b {
+    padding-top: 0px;
+    }
+
+
+/************************  ARCHIVE SERVICES PAGE - TABLET - ARCHIVE-SERVICES TEMPLATE  **********************/
+
+#archive-services-content{
+    background-color: green;
+    width: 100%;
+}
+
+
+div .archive-services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 45px 0px 45px 0px;
+}
+
+div .archive-service {
+    width: 50%;
+    margin: 0px 0px 0 0px;
+}
+
+div .archive-service-content{
+    width: 100%;
+}
+
+
+
+div .archive-service-content h2 {
+    width: 100%; 
+}
+
+
+div .archive-service-content p {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    background-color: red; 
+}
+
+
+div .archive-service-icon-b {
+    padding-top: 0px;
+    }
 
 
 }
@@ -227,7 +585,15 @@ div.case-study-images {
 
 @media only screen and (min-width: 1200px){
 
+  
+    .recent-posts, .recent-tweets {
+        width: 40%;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
     
+
+
 
 
 }

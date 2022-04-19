@@ -57,9 +57,11 @@ get_header(); ?>
         </div> <!-- #site-content-->
     </section> <!-- #featured-work-->
 
+
+<div id = "front-page-lower-half">
     <section class="recent-posts">
         <div class="site-content">
-            <div class="blog-post">
+            <div id="front-page-blog-post" class="blog-post">
                 <h4>From the Blog</h4>
                 <?php query_posts('posts_per_page=1'); ?>
                   <?php while ( have_posts() ) : the_post(); ?>
@@ -70,5 +72,29 @@ get_header(); ?>
             </div>
         </div>
     </section>
+
+
+    <section class="recent-tweets">
+        <div class="site-content">
+            <div class="twitter-post">
+                <h4>Recent Tweet</h4>
+                <?php query_posts('posts_per_page=1'); ?>
+                    <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+                        <div id="secondary" class="widget-area" role="complementary">
+	                        <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                        </div>
+                    <?php endif; ?>
+                <?php wp_reset_query(); ?>
+            </div>
+
+    <div class="follow-us-link">
+        <a href="https://twitter.com/rosie5281"><span>Follow Us ›</span></a>
+    </div>
+        </div>
+    </section>
+</div>
+
+
+
 
 <?php get_footer(); ?>
