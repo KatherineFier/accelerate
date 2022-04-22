@@ -26,11 +26,68 @@ Text Domain:  accelerate-theme-child
 }
 
 
-
-
 /* ==========================================================================
    Homepage - Mobile Styles
    ========================================================================== */
+
+
+
+/************************  HEADER NAVIGATION - MOBILE - HEADER.PHP TEMPLATE - *****************/
+
+#primary-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+/************************  FOOTER NAVIGATION - MOBILE - FOOTER.PHP TEMPLATE - *****************/
+
+   .site-footer {
+    border-top: none;
+    width: 90%;
+    }
+
+    .site-info{
+        border-top: 1px solid #bfbfbf;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 95%;
+    }
+
+
+    .site-description, .footer-bottom-half {
+        width: 100%;
+    }
+
+
+    .footer-site-title, .social-media-navigation {
+     width: 40%;
+    }
+
+    .menu-social-media-nav-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #menu-social-media-nav li{
+        padding-left: 0px;
+        padding-right: 20px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .footer-bottom-half {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+
 
 
 /************************  HOMEPAGE - MOBILE - FRONT-PAGE TEMPLATE - FEATURED WORK AREA *****************/
@@ -152,14 +209,28 @@ div #front-page-lower-half h4 {
 
 /************************  SINGLE-CASE-STUDIES-TEMPLATE/PAGE - MOBILE -  *****************/
 
+
+ #primary .case-study{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
 div .case-study-sidebar{
-    float:  left;
-    width: 300px;
-    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 75%;
 }
 
 
 .case-study-sidebar h2{
+    width: 100%;
     font-weight: 500;
     padding:  0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
@@ -167,6 +238,7 @@ div .case-study-sidebar{
 
 
 .case-study-sidebar h5{
+    width: 100%;
     font-weight: 100;
     text-transform: capitalize;
     color:  #A9A9A9;
@@ -176,13 +248,15 @@ div .case-study-sidebar{
 }
 
 .case-study-sidebar h6{
+    width: 100%;
     font-weight: 100;
-     font-size: 12px;
+    font-size: 12px;
     padding:  5px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
 
 .case-study-sidebar p{
+    width: 100%;
     font-weight: 100;
     padding:  20px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
@@ -190,11 +264,29 @@ div .case-study-sidebar{
 }
 
 .read-more-link a{
+    width: 100%;
     text-transform: uppercase;
     font-weight: 800;
     color: #45ac9d;
     font-size: 14px;
+    margin-bottom: 50px;
 }
+
+
+.case-study-images img{
+    width:  100%;
+    padding-bottom: 50px;
+}
+
+.case-study-images{
+    width:  80%;  
+}
+
+/*******div .case-study-sidebar{
+    float:  left;
+    width: 300px;
+    margin-top: 50px;
+} 
 
 
 div.case-study-images {
@@ -203,14 +295,86 @@ div.case-study-images {
     padding-left:  80px; 
 }
 
-.case-study-images img{
+#navigation{
+    float:  clear;
+}
+
+***/
+
+
+/************************  ARCHIVE-CASE-STUDIES-TEMPLATE/PAGE - MOBILE -  *****************/
+
+#primary .archive-case-study{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+div .archive-case-study-sidebar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 75%;
+}
+
+
+.archive-case-study-sidebar h2{
+    width: 100%;
+    font-weight: 500;
+    padding:  0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.archive-case-study-sidebar h5{
+    width: 100%;
+    font-weight: 100;
+    text-transform: capitalize;
+    color:  #A9A9A9;
+    font-size: 12px;
+    padding:  0px 0px 0px 0px;
+    margin: 0px 0px 5px 0px;
+}
+
+.archive-case-study-sidebar h6{
+    width: 100%;
+    font-weight: 100;
+    font-size: 12px;
+    padding:  5px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.archive-case-study-sidebar p{
+    width: 100%;
+    font-weight: 100;
+    padding:  20px 0px 0px 0px;
+    margin: 0px 0px 5px 0px;
+    font-size: 16px;
+}
+
+.archive-case-study-read-more-link a{
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #45ac9d;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+
+.archive-case-study-images img{
     width:  100%;
     padding-bottom: 50px;
 }
 
-
-#navigation{
-    float:  clear;
+.archive-case-study-images{
+    width:  80%;  
 }
 
 /************************************  CONTACT-PAGE - MOBILE ********************************/
@@ -301,11 +465,7 @@ div #error-page-text{
 
 
 
-
 /************************  SINGLE SERVICES PAGE - MOBILE - SINGLE-SERVICES TEMPLATE *****************/
-
-
-
 
 
 div .services {
@@ -337,7 +497,7 @@ div .service-content p {
 
 
 div .service-icon-b {
-padding-top: 30px;
+    padding-top: 30px;
 }
 
 
@@ -347,8 +507,6 @@ padding-top: 30px;
 .about-page-hero-content {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
-
-
 
 
 #archive-services-content{
@@ -418,6 +576,88 @@ padding-top: 30px;
 
 @media only screen and (min-width: 768px){
 
+    /************************  HEADER NAVIGATION - MOBILE - HEADER.PHP TEMPLATE - *****************/
+
+
+#masthead .page-header{
+    background-color: red;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#masthead .page-header .top-logo{
+    display: flex;
+    justify-content: flex-start;
+    background-color: purple;
+    width: 40%;
+}
+
+#primary-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    padding-bottom: 0px;
+    background-color: blue;
+}
+
+
+/************************  FOOTER NAVIGATION - TABLET - FOOTER.PHP TEMPLATE - *****************/
+
+.site-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 100px;
+    width: 90%;
+}
+    .site-info{
+        border-top: 1px solid #bfbfbf;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+.site-description, .footer-bottom-half {
+    width: 100%;
+}
+
+
+.footer-site-title, .social-media-navigation {
+    width: 40%;
+}
+
+.menu-social-media-nav-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu-social-media-nav li{
+    padding-left: 15px;
+    padding-right: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.footer-bottom-half {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+
+
 
        /************************  HOMEPAGE/FRONTPAGE - TEMPLATE - TABLET *****************/
 
@@ -449,13 +689,79 @@ padding-top: 30px;
     
     
     
+/************************  SINGLE-CASE-STUDIES-TEMPLATE/PAGE - TABLET -  *****************/
 
 
+#primary .case-study{
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
 
-    /*****************************  CASE-STUDIES-ARCHIVE-PAGE - TABLET *************************/
+div .case-study-sidebar{
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 40%;
+}
+
+.case-study-sidebar h5{
+    padding:  5px 0px 0px 0px;
+}
+
+.case-study-sidebar h6{
+    padding:  15px 0px 0px 0px;
+}
 
 
+.case-study-images img{
+    width:  100%;
+    padding-bottom: 50px;
+}
 
+.case-study-images{
+    width:  45%;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+/************************  ARCHIVE-CASE-STUDIES-TEMPLATE/PAGE - TABLET -  *****************/
+
+#primary .archive-case-study{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+
+div .archive-case-study-sidebar{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 40%;
+}
+
+.archive-case-study-sidebar h5{
+    padding:  5px 0px 0px 0px;
+}
+
+.archive-case-study-sidebar h6{
+    padding:  15px 0px 0px 0px;
+}
+
+
+.archive-case-study-images img{
+    width:  100%;
+    padding-bottom: 50px;
+}
+
+.archive-case-study-images{
+    width:  40%;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
 
 
 
@@ -585,6 +891,29 @@ div .archive-service-icon-b {
 
 @media only screen and (min-width: 1200px){
 
+
+
+
+    /************************  HEADER NAVIGATION - MOBILE - HEADER.PHP TEMPLATE - *****************/
+
+
+    #masthead .page-header{
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #masthead .page-header .top-logo{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+ 
+
+    /************************  HOMEPAGE/FRONT-PAGE-TEMPLATE - DESKTOP -  *****************/
+
   
     .recent-posts, .recent-tweets {
         width: 40%;
@@ -593,7 +922,29 @@ div .archive-service-icon-b {
     }
     
 
+/************************  SINGLE-CASE-STUDIES-TEMPLATE/PAGE - DESKTOP -  *****************/
 
 
+#primary .case-study{
+    justify-content: space-between;  
+}
+
+div .case-study-sidebar{
+    width: 45%;
+}
+
+
+
+
+/************************  ARCHIVE-CASE-STUDIES-TEMPLATE/PAGE - DESKTOP -  *****************/
+
+
+#primary .archive-case-study{
+    justify-content: space-between;  
+}
+
+div .archive-case-study-sidebar{
+    width: 45%;
+}
 
 }

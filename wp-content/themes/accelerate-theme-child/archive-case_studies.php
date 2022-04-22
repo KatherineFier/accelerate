@@ -25,16 +25,16 @@ get_header(); ?>
                 $link = get_field('site_link');	
 			?>
 
-		<div id="case-study">
+		<div class="archive-case-study">
 
-                <div class="case-study-sidebar">
+                <div class="archive-case-study-sidebar">
                     <h2 class="title-width"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <h5 class="services-width"><?php echo $services; ?></h5>
                     <p class="project-description-width"><?php echo $project_description; ?></p>
-                    <p class="read-more-link"><a href="<?php the_permalink(); ?>">View Project ›</a></p>
+                    <p class="archive-case-study-read-more-link"><a href="<?php the_permalink(); ?>">View Project ›</a></p>
                 </div> <!--close "case-study-sidebar"-->
 
-                <div class="case-study-images">
+                <div class="archive-case-study-images">
 					<a href="<?php the_permalink(); ?>">
                     		<?php if($image_1) {
                         	echo wp_get_attachment_image($image_1, $size);
