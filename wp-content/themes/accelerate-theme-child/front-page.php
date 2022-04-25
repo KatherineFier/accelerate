@@ -16,7 +16,7 @@ get_header(); ?>
 
 
 	<div id="primary" class="home-page hero-content">
-		<div class="main-content" role="main">
+		<div class="front-page" class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
 				<a class="button" href="<?php echo site_url('/case-studies/') ?>">View Our Work</a>
@@ -58,7 +58,7 @@ get_header(); ?>
     </section> <!-- #featured-work-->
 
 
-<div id = "front-page-lower-half">
+<div id="front-page-lower-half">
     <section class="recent-posts">
         <div class="site-content">
             <div id="front-page-blog-post" class="blog-post">

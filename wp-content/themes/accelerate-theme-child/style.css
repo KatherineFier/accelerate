@@ -25,6 +25,11 @@ Text Domain:  accelerate-theme-child
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+.main-content{
+    padding: 0 0 0 0;
+
+}
+
 
 /* ==========================================================================
    Homepage - Mobile Styles
@@ -46,14 +51,24 @@ Text Domain:  accelerate-theme-child
 
 /************************  FOOTER NAVIGATION - MOBILE - FOOTER.PHP TEMPLATE - *****************/
 
+
+#navigation{
+    padding-top: 10px;
+    width: 85%;
+}
+
+
    .site-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     border-top: none;
     width: 90%;
     }
 
     .site-info{
         border-top: 1px solid #bfbfbf;
-        padding-top: 30px;
+        padding-top: 20px;
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
@@ -100,6 +115,10 @@ div #primary{
 }
 
 
+div .front-page{
+    width: 80%;
+}
+
 .featured-work{
     padding-bottom: 50px;
 }
@@ -137,7 +156,7 @@ div #primary{
     font: 100 1em/1.75 'Open Sans', 'Montserrat',  Arial, sans-serif;
     width: 100%;
     text-align: center;
-    margin-top: 15px;
+    margin: 20px 0px 0px 0px;
 }
 
 
@@ -166,8 +185,18 @@ div #front-page-lower-half h4 {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #a6a6a6;
     text-transform: uppercase;
-    margin: 2em 0 .5em;
+    margin: 20px 0px 0px 0px;
 }
+
+
+div #front-page-lower-half h3 {
+    margin: 20px 0px 0px 0px;
+}
+
+div #front-page-lower-half h2 {
+    margin: 20px 0px 0px 0px;
+}
+
 
 .read-more-link, .follow-us-link {
     font-family: 'Montserrat';
@@ -380,6 +409,26 @@ div .archive-case-study-sidebar{
 /************************************  CONTACT-PAGE - MOBILE ********************************/
 
 
+#primary .contact-page-content{
+    background-color: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+#primary .contact-page-content h2{
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+}
+
+#primary .contact-page-content p{
+    width: 100%;
+    text-align: left;
+    padding: 0px 10px 0px 20px;
+}
+
 #nf-label-field-1, #nf-label-field-2, #nf-label-field-3 {
     font-weight: 100;
   }
@@ -393,14 +442,34 @@ div .archive-case-study-sidebar{
     display: none;
   }
 
+div .nf-form-cont{
+    width: 100%;
+}
+
+  nf-field{
+      width: 100%;
+  }
+
+
+  nf-fields-wrap{
+      display: flex;
+      flex-flow: row wrap;
+  }
+
+
+  div .nf-form-content{
+      padding: 15px 15px 15px 15px;
+  }
+
+  #nf-field-1-container, #nf-field-2-container, #nf-field-3-container{
+      width: 100%;
+  }
+
 
 #nf-field-1-wrap, #nf-field-2-wrap{
-    width: 45%;
+    width: 100%;
 }
 
-#nf-field-2-wrap{
-    float: left;
-}
 
 #nf-field-4{
     background-color: #45ac9d;
@@ -410,8 +479,6 @@ div .archive-case-study-sidebar{
     text-transform: capitalize;
     font-weight: 300px;
 }
-
-
 
 
 /************************  404 Error Page - MOBILE - FRONT-PAGE TEMPLATE - FEATURED WORK AREA *****************/
@@ -612,35 +679,21 @@ padding-top: 30px;
 
 /************************  FOOTER NAVIGATION - TABLET - FOOTER.PHP TEMPLATE - *****************/
 
+
+#navigation{
+    width: 86%;
+}
+
+
 .site-footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 100px;
-    width: 90%;
+    margin-top: 50px;
 }
     .site-info{
-        border-top: 1px solid #bfbfbf;
-        padding-top: 30px;
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-        width: 95%;
         margin-bottom: 20px;
     }
 
 .site-description, .footer-bottom-half {
     width: 100%;
-}
-
-
-.footer-site-title, .social-media-navigation {
-    width: 40%;
-}
-
-.menu-social-media-nav-container{
-    display: flex;
-    justify-content: flex-end;
 }
 
 #menu-social-media-nav li{
@@ -649,17 +702,8 @@ padding-top: 30px;
     margin: 0px 0px 0px 0px;
 }
 
-.footer-bottom-half {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
 
-
-
-
-
-       /************************  HOMEPAGE/FRONTPAGE - TEMPLATE - TABLET *****************/
+/************************  HOMEPAGE/FRONTPAGE - TEMPLATE - TABLET *****************/
 
     .individual-featured-work{
 
@@ -784,6 +828,55 @@ div .archive-case-study-sidebar{
 }
 
 
+
+/************************************  CONTACT-PAGE - TABLET ********************************/
+
+
+#primary .contact-page-content{
+    margin: 0px 100px 0px 100px;
+}
+
+
+/*************div .nf-form-cont{
+    width: 100%;
+}
+
+
+  nf-fields-wrap{
+      display: flex;
+      flex-flow: row wrap;
+  }
+
+  nf-field{
+      display: flex;
+      flex-flow: row wrap;
+  }
+
+
+  div .nf-form-content{
+      padding: 15px 15px 15px 15px;
+  }
+
+  #nf-field-1-container, #nf-field-2-container{
+      width: 45%;
+      float: left;
+  }
+
+
+  #nf-field-3-container{
+    width: 100%;
+}
+
+
+#nf-field-4{
+    background-color: #45ac9d;
+    padding-left: 100px;
+    padding-right: 100px;
+    float: right;
+    text-transform: capitalize;
+    font-weight: 300px;
+}*****/
+
 /************************  404 ERROR - TEMPLATE/PAGE- TABLET *****************/
 
 
@@ -894,7 +987,7 @@ div .archive-service-icon-b {
 
 
 
-    /************************  HEADER NAVIGATION - MOBILE - HEADER.PHP TEMPLATE - *****************/
+/************************  HEADER NAVIGATION - MOBILE - HEADER.PHP TEMPLATE - *****************/
 
 
     #masthead .page-header{
@@ -910,15 +1003,45 @@ div .archive-service-icon-b {
     }
 
 
- 
 
-    /************************  HOMEPAGE/FRONT-PAGE-TEMPLATE - DESKTOP -  *****************/
+/************************  FOOTER NAVIGATION - TABLET - FOOTER.PHP TEMPLATE - *****************/
+
+
+
+#navigation{
+    width: 75%;
+    max-width: 3000px; 
+}
+
+.site-footer {
+    margin-top: 50px;
+    width: 75%;
+    max-width: 3000px; 
+}
+
+.site-info{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.site-description, .footer-bottom-half {
+    width: 100%;
+}
+
+
+#menu-social-media-nav li{
+    padding-left: 15px;
+    padding-right: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+/************************  HOMEPAGE/FRONT-PAGE-TEMPLATE - DESKTOP -  *****************/
 
   
-    .recent-posts, .recent-tweets {
-        width: 40%;
-        padding: 0px 0px 0px 0px;
-        margin: 0px 0px 0px 0px;
+.recent-posts, .recent-tweets {
+    width: 35%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     }
     
 
