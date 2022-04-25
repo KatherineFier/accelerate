@@ -8,7 +8,7 @@
 * @package WordPress
 * @subpackage Accelerate Marketing
 * @since Accelerate Marketing 2.0
-*/
+**/
 
 // Enqueue scripts and styles
 function accelerate_child_scripts(){

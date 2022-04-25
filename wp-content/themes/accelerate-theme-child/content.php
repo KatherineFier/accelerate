@@ -7,7 +7,7 @@
 * @package WordPress
 * @subpackage Accelerate Marketing
 * @since Accelerate Marketing 2.0
-*/
+**/
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="post-entry">

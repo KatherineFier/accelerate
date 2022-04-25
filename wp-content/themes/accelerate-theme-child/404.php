@@ -33,7 +33,7 @@ get_header(); ?>
                     <p>Feel free to take a look around our <a href="http://localhost:8888/accelerate/blog/"> blog</a> or some of our featured <a href="http://localhost:8888/accelerate/case-studies/">work</a>.</p>
                 </div><!-- .error-text -->
 
-            </div> <!-- .error-page-content -->
+            </div> <!--- .error-page-content --->
 
 
 		</div><!-- .main-content -->

@@ -643,7 +643,7 @@ padding-top: 30px;
 
 @media only screen and (min-width: 768px){
 
-    /************************  HEADER NAVIGATION - MOBILE - HEADER.PHP TEMPLATE - *****************/
+/************************  HEADER NAVIGATION - MOBILE - HEADER.PHP TEMPLATE - *****************/
 
 
 #masthead .page-header{
@@ -677,7 +677,7 @@ padding-top: 30px;
 }
 
 
-/************************  FOOTER NAVIGATION - TABLET - FOOTER.PHP TEMPLATE - *****************/
+/*************************  FOOTER NAVIGATION - TABLET - FOOTER.PHP TEMPLATE - *****************/
 
 
 #navigation{
