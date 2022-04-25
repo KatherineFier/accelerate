@@ -647,7 +647,7 @@ padding-top: 30px;
 
 
 #masthead .page-header{
-    background-color: red;
+    background-color: none;
     width: 100%;
     max-width: 100%;
     display: flex;

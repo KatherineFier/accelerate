@@ -21,7 +21,7 @@ get_header(); ?>
                 	<h2><?php the_title(); ?></h2>
 					<?php the_content(); ?>
 				<?php endwhile; // end of the loop. ?>
-			</div> <!-- .contact-page-top-half -->
+			</div> <!-- .contact-page-content -->
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
