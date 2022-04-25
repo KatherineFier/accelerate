@@ -7,7 +7,7 @@
  * @package WordPress
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 2.0
- */
+ **/
 ?>
 <!DOCTYPE html>
 <head>

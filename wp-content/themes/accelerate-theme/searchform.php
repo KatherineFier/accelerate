@@ -7,7 +7,7 @@
 * @package WordPress
 * @subpackage Accelerate
 * @since Accelerate 2.0
-*/
+**/
 ?>
 
 <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">

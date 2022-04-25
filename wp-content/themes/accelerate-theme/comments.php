@@ -8,7 +8,7 @@
  * @package WordPress
  * @subpackage Accelerate
  * @since Accelerate 2.0
- */
+ **/
   ?>
 
  <div id="comments" class="comments-area">
