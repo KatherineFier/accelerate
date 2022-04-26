@@ -171,10 +171,22 @@ div .front-page{
 div #front-page-lower-half{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
+
+#front-page-lower-half .recent-posts{
+    width: 100%;
+    background-color: none;
+}
+
+#front-page-lower-half .recent-tweets{
+    width: 100%;
+    background-color: none;
+}
+
+
 
 #front-page-blog-post{
     width: 100%;
@@ -724,11 +736,13 @@ padding-top: 30px;
         width: 100%;
     }
     
+    
 
-    .recent-posts, .recent-tweets {
-        width: 45%;
+    #front-page-lower-half .recent-posts, #front-page-lower-half .recent-tweets {
+        width: 35%;
         padding: 0px 0px 0px 0px;
         margin: 0px 0px 0px 0px;
+        background-color: none;
     }
     
     
