@@ -16,17 +16,18 @@
 get_header(); ?>
 
 
-<div id="primary" class="home-page hero-content">
+<div id="primary" class="hero-content for-about-page">
 		<div class="main-content" role="main">
-				<h1>TEST</h1>
+				<h1 id="about-page-headline">Accelerate is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visible and making their customers smile.</h1>
         </div><!-- .main-content -->
 </div><!-- #primary -->
 	
 
-    <section id="archive-services-content">
+    <section id="archive-services-container">
         <div class="services-intro">
             <h3>Our Services</h3>
             <p>We take pride in our clients and the content we create for them.</p>
+            <div id="services-intro-spacer"></div>
             <p>Here's a brief overview of our offered services.</p>
         </div>  
 
@@ -62,6 +63,25 @@ get_header(); ?>
 
             <?php endwhile; // end of the loop. 
             ?>
+
         </section> <!-- #archive-services-content -->
+
+
+        <section class="contact-link-section">
+
+            <div class="cta">
+
+                <h4> Interested in working with us?</h4>
+
+                <div id="about-page-cta-button">
+
+                    <a class="button" href="<?php echo site_url('/contact-us/')?>"> Contact Us</a>
+
+                </div> <!-- #about-page-cta-button-->
+
+            </div> <!-- .cta -->
+
+        </section> <!-- #contact-link-section -->
+
         
 <?php get_footer(); ?>

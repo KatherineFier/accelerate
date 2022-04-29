@@ -18,6 +18,7 @@ Text Domain:  accelerate-theme-child
 
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
+    margin-bottom: 30px;
 }
 
 
@@ -112,6 +113,7 @@ div #primary{
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: -30px;
 }
 
 
@@ -349,7 +351,7 @@ div.case-study-images {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
 }
 
@@ -358,8 +360,8 @@ div .archive-case-study-sidebar{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    margin-top: 25px;
+    align-items: flex-end;
+    margin-top: 50px;
     margin-bottom: 25px;
     width: 75%;
 }
@@ -411,7 +413,7 @@ div .archive-case-study-sidebar{
 
 .archive-case-study-images img{
     width:  100%;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 .archive-case-study-images{
@@ -583,19 +585,31 @@ div .service-icon-b {
 /************************  ARCHIVE SERVICES PAGE - MOBILE - ARCHIVE-SERVICES TEMPLATE  **********************/
 
 
-.about-page-hero-content {
+.for-about-page{
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    height: auto;
+    margin: 0;
+    padding: 60px 0px 60px 0px;
+    text-align: center;
 }
 
 
-#archive-services-content{
-    background-color: yellow;
+#about-page-headline{
+   padding: 0 50px 0 50px;
+   font-weight: 500;
+   font: 'Montserrat', 'Open Sans', Arial, sans-serif;
+   line-height: 1.33em;
+   font-size: 1.5em;
+}
+
+#archive-services-container{
+    background-color: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    padding: 0px 50px 0px 50px;
+    padding: 60px 40px 60px 40px;
 }
 
 
@@ -603,26 +617,33 @@ div .services-intro h3{
     text-align: center;
     text-transform: uppercase;
     font-size: 16px;
+    margin-top: 0px;
 }
 
 
 div .services-intro p{
     text-align: center;
+    margin: 0 0 0 0;
 }
 
+
+#services-intro-spacer{
+    height: 10px;
+
+}
 
 
 div .archive-services {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
 
 
 div .archive-service-content {
-    padding: 0 30px 0 30px;
+    padding: 0px 0px 0px 0px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -632,18 +653,64 @@ div .archive-service-content {
 }
 
 div .archive-service-content h2 {
-    width: 100%; 
+    width: 100%;
+    font-size: 1.15em;
+    margin-top: 20px; 
 }
 
 div .archive-service-content p {
-    width: 100%; 
+    width: 100%;
+    margin: 10px 0 0 0; 
 }
 
 
-div .archive-service-icon-b {
-padding-top: 30px;
+.archive-service-icon-b img, div .archive-service-icon-a img{
+    width: 0%;
+    }
+
+div .archive-service-icon-b, div .archive-service-icon-a  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
 }
 
+
+.contact-link-section{
+    background-color: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+div .cta{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    width: 87%;
+    border-top: 1px solid #bfbfbf;
+}
+
+div .cta h4{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+div #about-page-cta-button{
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+div .cta a{
+    padding: .6em 1.75em;
+}
 
 
 
@@ -675,7 +742,7 @@ padding-top: 30px;
 #masthead .page-header .top-logo{
     display: flex;
     justify-content: flex-start;
-    background-color: purple;
+    background-color: none;
     width: 40%;
 }
 
@@ -685,7 +752,7 @@ padding-top: 30px;
     justify-content: flex-start;
     font-size: 16px;
     padding-bottom: 0px;
-    background-color: blue;
+    background-color: none;
 }
 
 
@@ -700,9 +767,10 @@ padding-top: 30px;
 .site-footer {
     margin-top: 50px;
 }
-    .site-info{
-        margin-bottom: 20px;
-    }
+
+.site-info{
+    margin-bottom: 20px;
+}
 
 .site-description, .footer-bottom-half {
     width: 100%;
@@ -718,13 +786,11 @@ padding-top: 30px;
 /************************  HOMEPAGE/FRONTPAGE - TEMPLATE - TABLET *****************/
 
     .individual-featured-work{
-
         width: 30%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
-    
     }
 
 
@@ -736,7 +802,6 @@ padding-top: 30px;
         width: 100%;
     }
     
-    
 
     #front-page-lower-half .recent-posts, #front-page-lower-half .recent-tweets {
         width: 35%;
@@ -745,6 +810,14 @@ padding-top: 30px;
         background-color: none;
     }
     
+    .hero-content h1 {
+        font-size: 3.3em;
+        line-height: 1.33em;
+    }
+
+    .hero-content h3 {
+        margin: 1em 0 3em;
+    }
     
     
 /************************  SINGLE-CASE-STUDIES-TEMPLATE/PAGE - TABLET -  *****************/
@@ -791,13 +864,14 @@ div .case-study-sidebar{
     justify-content: space-evenly;
     align-items: flex-start;
     width: 100%;
+    margin-top: 50px;
 }
 
 div .archive-case-study-sidebar{
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     width: 40%;
 }
 
@@ -812,13 +886,14 @@ div .archive-case-study-sidebar{
 
 .archive-case-study-images img{
     width:  100%;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 .archive-case-study-images{
     width:  40%;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -944,47 +1019,106 @@ div .service-icon-b {
 
 /************************  ARCHIVE SERVICES PAGE - TABLET - ARCHIVE-SERVICES TEMPLATE  **********************/
 
-#archive-services-content{
-    background-color: green;
-    width: 100%;
+
+.for-about-page{
+    padding: 75px 0px 75px 0px;
 }
 
 
-div .archive-services {
+#about-page-headline{
+    padding: 0 100px 0 100px;
+ }
+
+
+ div .archive-services {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
     padding: 45px 0px 45px 0px;
 }
 
+
+#archive-services-container{
+    background-color: none;
+    width: 100%;
+}
+
+
+div .services-intro{
+   margin-bottom: 40px;
+}
+
+
 div .archive-service {
-    width: 50%;
+    width: 60%;
     margin: 0px 0px 0 0px;
 }
 
 div .archive-service-content{
+    padding: 0 30px 0 30px;
     width: 100%;
 }
 
-
-
-div .archive-service-content h2 {
-    width: 100%; 
-}
 
 
 div .archive-service-content p {
-    width: 100%;
     margin: 0px 0px 0px 0px;
-    background-color: red; 
 }
 
 
-div .archive-service-icon-b {
-    padding-top: 0px;
-    }
+div .archive-service-icon-a img{
+    width: 70%;
+}
+
+
+.archive-service-icon-b img {
+    width: 70%;
+}
+
+
+div .archive-service-icon-b{
+    width: auto;
+}
+
+
+
+div .archive-service-icon-a{
+    width: auto;
+}
+
+
+    
+/***div .archive-service-icon-b, div .archive-service-icon-a  {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-top: 30px;
+} ***/
+
+
+
+.contact-link-section{
+    margin-bottom: -30px;
+}
+
+div .cta{
+    width: 86%;
+}
+
+div .cta h4{
+    width: 45%;
+    text-align: left;
+    padding-top: 35px;
+}
+
+
+div .cta a{
+    padding: 1em 3.75em;
+
+}
 
 
 }
@@ -1008,7 +1142,7 @@ div .archive-service-icon-b {
         width: 100%;
         max-width: 100%;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; 
     }
     
     #masthead .page-header .top-logo{
@@ -1051,6 +1185,15 @@ div .archive-service-icon-b {
 
 /************************  HOMEPAGE/FRONT-PAGE-TEMPLATE - DESKTOP -  *****************/
 
+
+/***.hero-content h1 {
+    font-size: 3.3em;
+    line-height: 1.33em;
+}**/
+
+.hero-content h3 {
+    margin: .5em 0 3em;
+}
   
 .recent-posts, .recent-tweets {
     width: 35%;
@@ -1083,5 +1226,62 @@ div .case-study-sidebar{
 div .archive-case-study-sidebar{
     width: 45%;
 }
+
+
+
+
+/************************  ARCHIVE SERVICES PAGE - DESKTOP - ARCHIVE-SERVICES TEMPLATE  **********************/
+
+
+
+.for-about-page{
+    padding: 130px 0px 130px 0px;
+}
+
+
+#about-page-headline{
+    padding: 0 300px 0 300px;
+    font-weight: 500;
+    font: 'Montserrat', 'Open Sans', Arial, sans-serif;
+    line-height: 1.33em;
+    font-size: 1.75em;
+    text-align: center;
+ }
+
+
+
+ div .services-intro{
+    margin-top: 40px;
+ }
+
+ 
+
+.archive-service-icon-b img, div .archive-service-icon-a img{
+    width: 90%;
+    }
+
+
+.archive-service-icon-b img{
+    padding-top: 0px;
+    padding-left: 50px;
+    }
+
+.archive-service-icon-a img{
+    padding-right: 50px;
+    }
+
+
+div .cta{
+    width: 75%;
+        
+}
+  
+    
+div .cta h4{
+    width: 35%;
+}
+
+
+
 
 }
